@@ -1,0 +1,1003 @@
+
+.space-navbar{
+    padding-top: 4rem;
+  }
+  
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+  }
+  
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgb(206, 198, 198);
+  }
+  
+  .NavbarLogo{
+    margin-left: 5rem;
+    cursor:pointer;
+  }
+  
+  .loginCondition{
+    display: flex;
+    align-items: center;
+  }
+  
+  .customerLogin{
+    position: relative;
+  }
+  
+  .customerLogin span {
+    position: absolute;
+    top: 0.2rem;
+    right: -0.5rem;
+    text-align: center;
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #BD0707;
+  }
+  
+  .userPicture{
+    aspect-ratio: 1;
+      object-fit: cover;
+      width: 3.25rem;
+      margin-left: 3.5rem;
+      margin-right: 5.5rem;
+      border: none;
+      border-radius: 50%;
+      cursor:pointer;
+  }
+  
+  .cartLogo{
+    width:2.5rem;
+    height: 2.5rem;
+    color:#613D2B;
+    cursor:pointer;
+  }
+  
+  .LoginButton{
+    border: 2px solid #613D2B;
+    border-radius: 5px;
+    background-color:white;
+    background:none;
+    color: #613D2B;
+    width:100px;
+    margin-right: 1rem;
+    cursor:pointer;
+  }
+  
+  .RegisterButton{
+    border: 2px solid #613D2B;
+    border-radius: 5px;
+    background-color:#613D2B;
+    color:white;
+    width:100px;
+    margin-right: 5rem;
+    cursor:pointer;
+  }
+  
+  
+  /* Modal */
+  
+  /*Login*/
+  
+  .alertModal{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .LoginSection{
+  position: fixed;
+  z-index: 3;
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .modal {
+    background: #000000e1;
+  }
+  .modal form {width: 22rem;}
+  .modal-input {
+      padding: 0.5rem 0.35rem;
+      background: #f7f1f1;
+  }
+  
+.modalSection{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background: #000000e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalForm{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    width: 25%;
+  }
+  
+  .modalSection form h2{
+    margin-bottom: 1.75rem;
+    color:#613D2B;
+    font-weight: 700;
+  }
+  
+  .emailModal{
+    padding: 0.5rem 0.35rem;
+    background: #f7f1f1;
+    border: 2px solid #613D2B;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  
+.passwordModal{
+    padding: 0.5rem 0.35rem;
+    background: #f7f1f1;
+    border: 2px solid #613D2B;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .submitModal{
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    background: #613D2B;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+  }
+  
+  .switchModalLink{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .cursor-pointer {cursor: pointer;}
+  
+  /* Dropdown*/
+  
+.AdminUserSection{
+    display:flex;
+  }
+  
+.dropdownSection{
+  position: absolute;
+  z-index: 999;
+  top: 3.5rem;
+  right: 4.5rem;
+}
+
+  .dropdown {
+    position: fixed;
+    top: 0;
+    padding-left: 0;
+    list-style: none;
+    box-shadow: 0 0 10px 5px #00000046;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    padding-top: 1rem;
+  }
+  
+.dropdown li p{
+  margin-left: 1rem;
+}
+
+.dropdownSection li{
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  padding-right: 2.5rem;
+  padding-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  cursor:pointer;
+}
+
+  .dropdown-triangle {
+    position: absolute;
+    top: -1rem;
+    right: 0.5rem;
+  }
+  
+  .UserAdminModal{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 3rem;
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .productListModal{
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    padding-right: 3rem;
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  /*Home*/
+  
+  .hero{
+    width: 970px;
+    height: 400px;
+    background-color: 
+    #DBB699;
+    margin-left: 8rem;
+    padding-top: 2rem ;
+    margin-top: 5rem;
+  }
+  
+  .Imagehero{
+    position: absolute;
+    margin-left: 38rem;
+  }
+  
+  .Waves{
+    position: absolute;
+    margin-left: 34rem;
+    margin-top: 15rem;
+  }
+  
+  .HeroTitle{
+    width: 25rem;
+    height: 20rem;
+    margin-left: 5rem;
+    margin-bottom: 10rem;
+    position: absolute;
+  }
+  
+  
+  /*Order-List*/
+  
+.coffeeSection{
+  padding-bottom: 1rem;
+}
+
+  .drink-list{
+    width: 68rem;
+    margin-left: 8rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    row-gap: 1.5rem;
+    height: auto;
+    margin-right: 1rem;
+  }
+
+  #mainImage{
+    width: 14rem;
+    height:14rem;
+    cursor:pointer;
+  }
+  
+  .CoffeDetail{
+    background-color: #F6E6DA;
+    width: 14rem;
+    height: 6rem;
+    padding-left: 15px;
+    padding-top: 10px;
+    cursor:pointer;
+  }
+  
+  .CoffeeTitle h6{
+    font-size: 16px;
+    font-weight: bold;
+    color:#613D2B;
+    margin-bottom: 15px;
+  }
+  
+  .CoffeDetail h2{
+    font-size: 12px;
+    color:#974A4A;
+  }
+  
+  .py1 {
+    padding-top: 1rem; padding-bottom: 1rem;
+  }
+  
+  /* detail-product.jsx */
+  
+  .detail-product-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem;
+  }
+  
+  .picture-detail-menu{
+    width: 22rem;
+    margin-right: 5rem;
+  }
+  
+  .picture-detail{
+    width: 22rem;
+    aspect-ratio: 241 / 312;
+    object-fit: cover;
+  }
+  
+  .right-detail-product{
+    width: 36rem;
+  }
+  
+  .flavour-price-detail{
+    width: 36rem;
+    height: 6rem;
+  }
+  
+  .flavour-detail{
+    width: 36rem;
+    height: 2.5rem;
+  }
+  
+  .flavour-detail h6{
+    font-size:1.5rem;
+    font-weight: 800;
+    color:#613D2B; 
+  }
+  
+  .price-detail{
+    height: 2rem;
+    font-size:1rem;
+    font-weight: 800;
+    color: #974A4A;
+  }
+  
+  .description-detail{
+    width: 36rem; 
+    height: 16rem;
+    overflow: auto;
+  }
+  
+  .data-payment{
+    height: 5rem;
+    width: 25rem;
+    margin-top: 1rem;
+  }
+  
+  .detail-payment-cart{
+    height: 2rem;
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.3rem;
+  }
+  
+  .subTotal-title-cart h6{
+    font-size: 14px;
+    color:#974A4A
+  }
+  
+  .subTotal-payment-cart h6{
+    font-size: 14px;
+    color:#974A4A;
+  }
+  
+  .quantity-title-cart{
+    height: 2rem;
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    color: #974A4A;
+  }
+  
+  .quantity-cart h6{
+    font-size: 14px;
+    color:#974A4A;
+  }
+  
+  .total-cart-detail{
+    display: flex;
+    flex-wrap: wrap;
+    height: 2rem;
+  }
+  
+  .total-detail{
+    display: flex;
+    flex-wrap: wrap;
+    height: 4rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .add-cart{
+    height: 2.5rem;
+    width: 100%;
+    background-color:#613D2B;
+  }
+  
+  .total-detail h6{
+    color: #974A4A;
+  }
+  /* cart.jsx */
+  
+  .cart-section{
+    flex-wrap: wrap;
+    height: 40rem;
+    width: 65rem;
+    margin-left: 7rem;
+  }
+  
+  .cart-title{
+    height: 3.5rem;
+  }
+  
+  .cart-title h6{
+    font-size:1.5rem;
+    font-weight: 800;
+    color:#613D2B;
+  }
+  
+  .cart-container{
+    height: 40rem;
+    width: 65rem;
+    display: flex;
+  }
+  
+  .left-cart-container{
+    height: 40rem;
+    width: 41rem;
+  }
+  
+  .left-cart-container h6{
+    color: #613D2B;
+    font-size: 18px;
+  }
+  
+  .line-cart{
+    border-style: solid;
+    border-width: 1px 0;
+    border-color: #613D2B;
+    margin-bottom: 0.5rem;
+  }
+  
+  .main-cart{
+    margin-top: 10px;
+    height: 8rem;
+    width: 30rem;
+    display: flex;
+  }
+  
+  .picture-menu-cart{
+    width: 5rem;
+    height: 7rem;
+    margin-right: 0.5rem;
+  }
+  
+  .picture-cartPaid{
+    width: 4.8rem;
+    height: 6.8rem;
+  }
+  
+  .data-cart{
+    height: 5rem;
+    width: 25rem;
+    margin-top: 1rem;
+  }
+  
+  .data-flavour-cart{
+    height: 2rem;
+    width: 35.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .menu-title-cart h6{
+    font-size: 14px;
+    color:#613D2B;
+  }
+  
+  .data-price-cart h6{
+    font-size: 14px;
+    color:#613D2B;
+  }
+  
+  .data-quantity-cart{
+    height: 2rem;
+    width: 35.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+.quantityButton{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 5rem;
+  height: 2rem;
+}
+
+.quantityButton button{
+height: 25px;
+width: 25px;
+border: none;
+color:#613D2B;
+font-weight: bold;
+background: none;
+}
+
+.quantityProduct {
+  background-color: #DBB699;
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.quantityProduct h6{
+  margin-left: 5px;
+  margin-bottom: 5px; 
+}
+
+  .trash-cart{
+    color:#613D2B;
+  }
+  
+  .right-cart-container{
+    height: 40rem;
+    width: 20rem;
+    margin-top: 1.9rem;
+    margin-left: 3rem;
+  }
+  
+  /*Profile*/
+  
+  .transaction-section{
+    height: 600px;
+    width: 1080;
+    display:flex;
+    flex-wrap: nowrap;
+    margin-bottom: 7rem;
+  }
+  /* My Profile */
+  .profile-container{
+    width: 276.75px;
+    height: 280.79px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 147px;
+    margin-bottom: 515.21px;
+    margin-right: 200px;
+  }
+  
+  .profile-title{
+    width: 112.5px;
+    height: 33px;
+    margin-bottom: 26px;
+  }
+  
+  .profile-title h6{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 33px;
+    color:#613D2B;
+  }
+  
+  .detail-profile{
+    width: 281.25px;
+    height: 221.79px;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-right: 155px; */
+  }
+  
+  .picture-profile{
+   margin-right: 20.25px;
+  }
+  
+  .picture-user{
+    width: 135px;
+    height: 180px;
+    border-radius: 10px;
+  }
+  
+  .identity-profile{
+    width: 114px;
+    height: 136px;
+  }
+  
+  .identity-name{
+    width: 75px;
+    height: 25px;
+    margin-bottom: 3px;
+  }
+  
+  .identity-name h6{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    color: #613D2B;
+  }
+  
+  .userName{
+    width: 250px;
+    height: 25px;
+    margin-bottom: 27px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .userName h6{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    display: inline;
+  }
+  
+  .identity-email{
+    width: 34.5px;
+    height: 25px;
+    margin-bottom: 6px;
+  }
+  
+  .identity-email h6{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    color: #613D2B;
+  }
+  
+  .userEmail{
+    width: 250px;
+    height: 25px;
+  }
+  
+  .userEmail h6{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  /* My Transaction */
+  
+  .transaction-container{
+    width:520px;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .transaction-title{
+    width: 187.5px;
+    height: 33px;
+    margin-bottom: 26px;
+  }
+  
+  .transaction-title h6{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 33px;
+    color: #613D2B;
+  }
+  
+  .detail-transaction{
+    width: 550px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F7DADA;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+  }
+  
+.box-order{
+  display: flex;
+}
+
+  .left-container{
+    width: 370px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 28px;
+    margin-right:5px;
+  }
+  
+  .main-order{
+    width: 370px;
+    height: 125px;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  
+  .picture-menu{
+    margin-right: 9.75px;
+    margin-top: 14px;
+  }
+  
+  .picture-menuPurchased{
+    width: 6rem;
+    height: 9rem;
+    border-radius: 10px;
+  }
+  
+  .data-order{
+    width: 60px;
+    height: 79px;
+    margin-bottom: 18px;
+    margin-top: 18px;
+  }
+  
+  .data-flavour{
+    width: 180px;
+    height: 25px;
+    margin-bottom: 3px;
+  }
+  
+  .data-flavour h6{
+    font-weight: 900;
+    font-size: 14px;
+    color: #BD0707;
+  }
+  
+  .orderTime{
+    width: 150px;
+    height: 12px;
+    margin-bottom: 2.5rem;
+  }
+  
+  .orderTime h6{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    color: #BD0707;
+  }
+  
+  .data-price{
+    width: 210px;
+    height: 18px;
+  }
+  
+  .data-price h6{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: #BD0707;
+  }
+  
+  .data-quantity{
+    width: 150px;
+    height: 18px;
+  }
+  
+  .data-quantity h6{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: #974A4A;
+  }
+  
+  .right-container{
+    height: 150px;
+    width: 80px;
+    margin-top: 14px;
+  }
+  
+  .logo-transaction{
+    width: 5rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    margin-left: 5px;
+  }
+  
+  .logo-detail{
+    width: 100%;
+    height:100%;
+    box-sizing : border-box;
+    display: inline;
+  }
+  
+  .qr-transaction{
+    height: 56px;
+    width: 56px;
+    margin-bottom: 10px;
+    align-items: center;
+    margin-left: 18px;
+  }
+  
+  .qr-code{
+    height: 100%;
+    width: 100%;
+    display:inline;
+  }
+  
+  .status-order{
+    width: 84px;
+    height: 19px;
+    margin-bottom: 12px;
+    border-radius: 2px;
+    margin-left: 20px;
+  }
+  
+  .status-order h6{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    color: #00D1FF;
+  }
+  
+  .subTotal{
+    width: 150px;
+    height: 14px;
+    margin-bottom: 25px;
+  }
+  
+  .subTotal h6{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    color: #974A4A;
+  }
+  
+  /*Transaction*/
+  
+  .table{
+    margin-top: 2rem;
+    color: #613D2B;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  
+  .table h1{
+    color: #613D2B;
+  }
+  
+  thead{
+    background-color: #E5E5E5;
+  }
+  
+.productIncome{
+  display: inline;
+  font-size: 16px;
+}
+  
+  /*Add Product*/
+  
+  .product-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .product-section form{
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 4rem;
+  }
+  
+  form h2{
+    margin-bottom: 1rem;
+    color:#613D2B;
+    font-weight: 700;
+  }
+  
+  .titleProduct{
+    padding: 0.5rem 0.35rem;
+    margin-bottom: 1.5rem;
+    background-color: #f7f1f1;
+    border-radius: 5px;
+    border: 2px solid #613D2B;
+  }
+  
+  .stockProduct{
+    padding: 0.5rem 0.35rem;
+    margin-bottom: 1.5rem;
+    background-color: #f7f1f1;
+    border-radius: 5px;
+    border: 2px solid #613D2B;
+  }
+  
+  .priceProduct{
+    padding: 0.5rem 0.35rem;
+    margin-bottom: 1.5rem;
+    background-color: #f7f1f1;
+    border-radius: 5px;
+    border: 2px solid #613D2B;
+  }
+  
+  .descriptionProduct{
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    background-color: #f7f1f1;
+    border-radius: 5px;
+    height: 7rem;
+    border: 2px solid #613D2B;
+  }
+  
+  .productLabel{
+      color: #757575;
+      background: #F7f1f1;
+      border: 2px solid #613D2B ;
+      border-radius: 5px;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+      height: 4rem;
+  }
+  
+  .clip{
+    display: inline;
+    width: 2rem;
+    height: 3.5rem;
+    justify-content: end;
+    cursor:pointer;
+    margin-right: 0.5rem;
+  }
+  
+  .buttonDiv{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .productButton{
+      width: 50%;
+      padding: 0.5rem 0;
+      background-color: #613D2B;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: 500;
+  }
+  
+  .input-product {
+    aspect-ratio: 241 / 312;
+    object-fit: cover;
+    height: 25rem;
+    margin-right: 7.5rem;
+    border-radius: 10px;
+  }
+  
+  .popUpSection{
+    background: white;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    color:#613D2B;
+    border:#613D2B 1px solid;
+  }
