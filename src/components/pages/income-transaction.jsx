@@ -27,32 +27,11 @@ export default function IncomeTransaction(){
     }
   };
 
-  // const getProduct = async () => {
-  //   try {
-  //     const res = await API.get(`/products`);
-  //     setProduct(res.data.data.title);
-  //     console.log("Product" + res)
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // };
-
-  // const getUser = async () => {
-  //   try {
-  //     const res = await API.get(`/user/${id}`);
-  //     setUser(res.data.data.name);
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // };
-
   React.useEffect(() => {
     if (state.isLogin === false || state.user.status === "customer") {
       navigate('/')
     } else {
       getTransaction()
-      // getUser()
-      // getProduct()
     }
   },[])
 
