@@ -38,19 +38,6 @@ console.log(carts)
 useEffect(()=>{
   getCart()
 }, [])
-  // let { data: cart, refetch } = useQuery("cartsCache", async () => {
-  //   const response = await API.get("/carts");
-  //   return response.data.data;
-  // });
-
-
-  // const dataCarts = cart?.filter((item)=>{
-  //   return item.transaction_id === null
-  // })
-
-  // console.log(dataCarts)
-
-
  
   let resultTotal = carts?.reduce((addition, b) => {
     return addition + b.sub_amount;
