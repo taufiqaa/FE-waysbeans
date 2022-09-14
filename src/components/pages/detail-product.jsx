@@ -92,7 +92,7 @@ function DetailProduct() {
             </div>
             <Button variant="danger" className="add-cart"
             style={{backgroundColor:`#613D2B`, border: 'none'}} onClick={(e) => handleSubmit.mutate(e)}>
-              Add Cart
+              Add to Cart
             </Button>
           </div>
         </div>
