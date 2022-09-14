@@ -3,12 +3,15 @@ import Button from "react-bootstrap/Button";
 import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
 import { UserContext } from "../../components/context/userContext"
-// import CoffeeData from "../molecules/coffe-data";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useMutation, useQuery } from 'react-query';
 import { API } from '../config/api';
 
 function DetailProduct() {
+  const title = 'Detail Product';
+  document.title = 'WaysBeans | ' + title;
+
+
   const navigate = useNavigate()
   const [state] = useContext(UserContext)
   

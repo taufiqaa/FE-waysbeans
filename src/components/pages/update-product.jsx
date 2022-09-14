@@ -13,17 +13,17 @@ export default function UpdateProduct() {
   let navigate = useNavigate();
   const { id } = useParams();
   
-  const [preview, setPreview] = useState(null); //For image preview
-  const [product, setProduct] = useState({}); //Store product data
+  const [preview, setPreview] = useState(null);
+  const [product, setProduct] = useState({});
   const [form, setForm] = useState({
     title: '',
     price: '',
     stock: '',
     description:'',
     image: '',
-  }); //Store product data
+  }); 
 
-  // Fetching detail product data by id from database
+  
   useQuery('productCache', async () => {
     const response = await API.get('/product/' + id);
     setPreview(response.data.data.image);
@@ -37,7 +37,7 @@ export default function UpdateProduct() {
     setProduct(response.data.data);
   });
 
-   // Handle change data on form
+  
   const handleChange = (e) => {
     setForm({
       ...form,
@@ -45,7 +45,7 @@ export default function UpdateProduct() {
         e.target.type === 'file' ? e.target.files : e.target.value,
     });
  
-    // Create image url for preview
+  
     if (e.target.type === 'file') {
       let url = URL.createObjectURL(e.target.files[0]);
       setPreview(url);
@@ -56,14 +56,12 @@ export default function UpdateProduct() {
     try {
       e.preventDefault();
 
-      // Configuration
       const config = {
         headers: {
           'Content-type': 'multipart/form-data',
         },
       };
 
-      // Store data with FormData as object
       const formData = new FormData();
       if (form.image) {
         formData.set('image', form?.image[0], form?.image[0]?.name);
@@ -73,7 +71,6 @@ export default function UpdateProduct() {
       formData.set('stock', form.stock);
       formData.set('description', form.description);
 
-      // Insert product data
       const response = await API.patch(
         '/product/' + id,
         formData,

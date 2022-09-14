@@ -12,14 +12,13 @@ import { useNavigate } from "react-router-dom";
 import { UserContext } from "../context/userContext"
 
 export default function Cart() {
+  const title = 'Cart';
+  document.title = 'WaysBeans | ' + title;
+
 
   let navigate = useNavigate();
   const [state, dispatch] = useContext(UserContext)
   const [carts, setCarts] = useState([]);
-
-
-  // const [popUp] = React.useState(false);
-  
 
 const getCart = async ()  =>{
   try{

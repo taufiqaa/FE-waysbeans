@@ -5,6 +5,10 @@ import Waves from "../../assets/Waves.png";
 import CoffeeList from "../molecules/coffee-list";
 
 export default function Home() {
+  const title = 'Home';
+  document.title = 'WaysBeans | ' + title;
+
+
   return (
     <>
       <Header />

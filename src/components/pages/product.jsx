@@ -7,12 +7,14 @@ import { useNavigate } from 'react-router';
 import { useMutation } from 'react-query';
 
 export default function AddProduct() {
+  const title = 'Add Product';
+  document.title = 'WaysBeans | ' + title;
+
 
     const navigate = useNavigate()
     const [popUp, setPopUp] = React.useState(false);
     const [photoProduct, setPhotoProduct] = React.useState(<p>Photo Product</p>)
-    const [preview, setPreview] = useState(null); //For image preview
-    // Create variabel for store data with useState here ...
+    const [preview, setPreview] = useState(null); 
     const [form, setForm] = useState({
       title: '',
       price: '',
@@ -21,7 +23,6 @@ export default function AddProduct() {
       description: '',
     }); 
   
-    // Handle change data on form
     const handleChange = (e) => {
       setForm({
         ...form,
@@ -29,7 +30,6 @@ export default function AddProduct() {
           e.target.type === 'file' ? e.target.files : e.target.value,
       });
   
-      // Create image url for preview
       if (e.target.type === 'file') {
         let url = URL.createObjectURL(e.target.files[0]);
         setPreview(url);
@@ -39,19 +39,16 @@ export default function AddProduct() {
       }
     };
   
-    // Create function for handle insert product data with useMutation here ...
     const handleSubmit = useMutation(async (e) => {
       try {
         e.preventDefault();
   
-        // Configuration
         const config = {
           headers: {
             'Content-type': 'multipart/form-data',
           },
         };
   
-        // Store data with FormData as object
         const formData = new FormData();
         formData.set('title', form.title);
         formData.set('price', form.price);
@@ -59,7 +56,6 @@ export default function AddProduct() {
         formData.set('description', form.description);
         formData.set('image', form.image[0], form.image[0].name);
   
-        // Insert product data
         const response = await API.post('/product', formData, config);
         console.log(response);
   
